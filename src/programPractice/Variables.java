@@ -14,6 +14,11 @@ public class Variables {
 		System.out.println(ref.b);
 		// static variable able to print with out object creation
 		System.out.println(c);
+		float z=a;
+		System.out.println("widening the datatypes float z=a : "+z);
+		int y=(int) z;
+		System.out.println("Narrowing the datatypes int y=(int)z :"+y);
+		System.out.println("Compile time error : int y= z;");
 		
 	}
 
