@@ -16,6 +16,7 @@ public class LoopingStatement {
 		// while loop
 		// looping level is finite
 		while(k<=6) {
+			
 			System.out.println("Even numbers from 0 to 6: "+k);
 			k=k+2;
 		}
@@ -23,6 +24,9 @@ public class LoopingStatement {
 		// looping level is size of array
 		String [] books= {"Tamil", "English", "Maths", "Science"};
 		for(String book:books) {
+			if(book=="Maths") {
+				continue;
+			}
 			System.out.println(book);
 		}
 		int z=0;
@@ -30,7 +34,8 @@ public class LoopingStatement {
 		do {
 			System.out.println(z);
 			z=z+2;
+			break;
 		}while(z<=10);
-			
+			// Jumping Statement - break and continue
 }
 }
